@@ -36,8 +36,15 @@ function sortearAmigo(){
 if (amigos.length == 0){
     alert('Por favor, insira um nome.')
 }else{
+ limparLista();
  let exibirAmigoEscolhido = document.getElementById('resultado');
  exibirAmigoEscolhido.textContent = 'O amigo sorteado foi: ' + amigos[amigoEscolhido];
 }
+
+}
+function limparLista(){
+    exibir = document.getElementById('listaAmigos');
+    exibir.innerHTML = '';
+
 }
   
